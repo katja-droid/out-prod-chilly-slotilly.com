@@ -1,0 +1,43 @@
+$footerAccentColor: #018ec3;
+$footerColor: linear-gradient(
+  90deg,
+  rgb(45 108 107) 0%,
+  rgb(21 51 51) 35%,
+  rgb(13 42 42) 100%
+);
+$footerFont-size: 14px;
+$footerFontColor: #018ec3;
+
+:root {
+  --color-button-bg: #018ec3;
+  --color-button-bg-hvr: #018ec3;
+  --color-button-bg-items: #018ec3;
+  --color-footer-bg: #018ec3;
+  --color-accent: #018ec3;
+  --color-modalsBG: linear-gradient(180deg, #013a40, #3bd9bc 100.21%);
+
+  --radius-button-hero: 50px;
+
+  --color-banner-main: #8b8354;
+  --color-banner-add: #f24405;
+
+  --color-bg: #8b8354;
+  --color-primary: #d92332;
+  --color-primary-hover: #d9b573;
+  --color-white: #f0f0f2;
+  --color-light: #fdf3e3;
+
+  --color-second: #f2c12e;
+
+  --color-bg-variant: #8b8354;
+  --color-primary-variant: #f2c12e;
+
+  --bacckground-modals: 8b8354;
+  --color-modalP: #8b8354;
+
+  --transition: all 300ms ease;
+  --border-radius: 6px;
+
+  --container-width-mobile: 90%;
+  --container-width-desktop: 80%;
+}

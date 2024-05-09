@@ -1,0 +1,124 @@
+.hero {
+  padding: 40px 0;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/hero_img_mob_1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (min-width: 765px) {
+    padding: 120px 0;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../img/hero_img_desk.jpg");
+  }
+}
+
+.hero__title {
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+.hero__about {
+  margin-top: 15px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 35px;
+  }
+}
+.hero__btn {
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: chocolate;
+  border-radius: 10px;
+  margin-top: 33px;
+  transition: 250ms;
+  max-width: 120px;
+  & p {
+    font-size: 14px;
+  }
+  &:hover {
+    background-color: rgb(197, 87, 8);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero__all-items {
+  // position: absolute;
+  color: #000;
+  // z-index: 1;
+  // top: 72%;
+  // left: 27%;
+  background: #fff;
+  padding: 30px 30px;
+  /* width: 100%; */
+  /* align-self: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 10px;
+
+  background-color: var(--color-button-bg);
+  border-color: transparent;
+  border-radius: var(--radius-button-hero);
+  border-style: solid;
+  border-width: 0;
+  color: #f2f2f0;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-size: 14px;
+  min-height: 4px;
+  font-weight: bold;
+  padding: 0.9em 4em;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  // @media screen and (min-width: 1200px) {
+  //   left: 44%;
+  // }
+}
+
+.hero__all-items:hover {
+  background-color: var(--color-button-bg-hvr);
+}
+
+.marginHero {
+  // margin: 20px 0px 20px;
+  margin: 20px 0px 20px;
+  color: #000;
+  text-align: center;
+  font-weight: 900;
+}
+
+.wrapperHolder-text {
+  padding: 15px;
+  font-size: 35px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
