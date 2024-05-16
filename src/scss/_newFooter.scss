@@ -5,10 +5,35 @@
 //   }
 // }
 .footer{
-   background-image: url('../img/texture.jpg'); /* Specify the path to your image */
+   background-color: #064b58 !important;
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
+}
+input:placeholder{
+  color: #034e59 !important;
+}
+.footer-form{
+  width: 60%;
+  margin: 0 auto;
+}
+.footer-form input{
+  display: block;
+  outline: 0;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+  padding: 10px 20px;
+  color: #000;
+  text-align: center;
+  width: 50%;
+  height: 40px;
+  border: 0.5px solid #000;
+  border-radius: 6px;
+  background-color: white;
+  color: #034e59;
+  @media screen and (min-width: 1200px) {
+    width: 55%;
+  }
 }
 .top {
   max-width: 1200px;
@@ -40,7 +65,7 @@
   // background-color: #fff;
 
   @media screen and (min-width: 1200px) {
-    color: var(--color-white);
+    color: #044d5b;
   }
 
   &:hover,
@@ -55,6 +80,7 @@ footer li {
 body.lock {
   overflow: hidden;
 }
+
 .footer {
   padding: 5px 0 0;
   background-color: var(--color-footer-bg);
@@ -86,7 +112,7 @@ body.lock {
   position: relative;
   padding-bottom: 5px;
   font-weight: 500;
-  color: var(--color-white);
+  color: #044d5b;
   text-transform: capitalize;
 }
 .footer__link::before {
@@ -106,7 +132,7 @@ body.lock {
 }
 .footer__copy {
   padding: 0px 15px 15px;
-  color: var(--color-white);
+  color: #fff;
   text-align: center;
   // text-transform: capitalize;
   //   background-color: #8c311f;
@@ -210,7 +236,7 @@ body.lock {
 .order-form__btn {
   font-size: calc(20px + 2 * ((100vw - 320px) / 960));
   padding: 20px 30px;
-  color: #fff;
+  color: #044d5b;
   font-weight: 600;
   background-color: var(--primary-color);
   transition: 0.3s ease-in-out;

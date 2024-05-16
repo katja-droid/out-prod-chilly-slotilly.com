@@ -76,7 +76,7 @@
   text-transform: capitalize;
   border-radius: 10px;
 
-  background-color: var(--color-button-bg);
+
   border-color: transparent;
   border-radius: var(--radius-button-hero);
   border-style: solid;
@@ -92,14 +92,56 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-
+  background-color: #044f5d;
   // @media screen and (min-width: 1200px) {
   //   left: 44%;
   // }
 }
 
 .hero__all-items:hover {
-  background-color: var(--color-button-bg-hvr);
+    background-color: #044f5d;
+}
+.hero__all-items_ {
+  // position: absolute;
+  color: #000;
+  // z-index: 1;
+  // top: 72%;
+  // left: 27%;
+  background: #fff;
+  padding: 30px 30px;
+  /* width: 100%; */
+  /* align-self: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 10px;
+
+
+  border-color: transparent;
+  border-radius: var(--radius-button-hero);
+  border-style: solid;
+  border-width: 0;
+  color: #f2f2f0;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-size: 14px;
+  min-height: 4px;
+  font-weight: bold;
+  padding: 0.9em 4em;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #084e60;
+  background-color: #6ef6ea;
+  // @media screen and (min-width: 1200px) {
+  //   left: 44%;
+  // }
+}
+
+.hero__all-items_:hover {
+    background-color: #044f5d;
 }
 
 .marginHero {

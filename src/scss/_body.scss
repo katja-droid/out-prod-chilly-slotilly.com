@@ -5,7 +5,7 @@ body {
   margin: 0px;
   color: #8b8354;
   letter-spacing: normal;
-   background-color: #cec8a6;
+   background-color: #fff;
 
   scroll-behavior: smooth;
 }
@@ -20,7 +20,7 @@ body {
   align-items: center;
   height: 110px;
   // background: rgb(253 201 53);
- background-image: url('../img/texture.jpg'); /* Specify the path to your image */
+ background-color: #6ef6ea; /* Specify the path to your image */
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
@@ -327,13 +327,13 @@ button {
   width: 100%;
   background-repeat: no-repeat;
   position: relative;
-  background-color: #b0732a !important;
+  background-color: #fff !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
     align-content: center;
-   background-image: url('../img/texture.jpg'); /* Specify the path to your image */
+   background-color: #6ff5ec; /* Specify the path to your image */
     background-repeat: repeat !important; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
@@ -674,7 +674,7 @@ button {
 }
 
 .footer__bg {
-  background: #152848;
+  background: #064b58 !important;
 }
 
 .footer__a-hover:hover {
@@ -910,12 +910,14 @@ padding-bottom: 20px;
 .wrapper__buttons-sec2:hover::before {
   animation: animate_border 0.75s linear infinite;
 }
-
+input:placeholder{
+  color: #034e59 !important;
+}
 .wrapper__buttons-sec2 span {
   position: relative;
   z-index: 2;
   display: block;
-  color: #112619;
+  color: #084e60;
   padding: 15px 20px;
   border-radius: 50px;
   font-weight: 800;
@@ -949,7 +951,7 @@ padding-bottom: 20px;
   border-radius: 50px;
   align-self: baseline;
   margin: 10px 0px 0px 10px;
-  background-image: url('../img/texture.jpg'); /* Specify the path to your image */
+  background-color: #064b58; /* Specify the path to your image */
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
