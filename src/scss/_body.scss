@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0px;
   color: #8b8354;
   letter-spacing: normal;
@@ -14,13 +14,98 @@ body {
   color: #000;
 } */
 
+$breakpoint-desktop: 1200px;
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 50%;
+    display: block;
+    // padding: 25px;
+    height: 100%;
+
+    @media screen and (min-width: 1200px) {
+      width: 20%;
+      padding: 25px;
+    }
+  }
+
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: background-animation 15s infinite;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+}
+
+.slider h1 {
+    z-index: 999;
+    pointer-events: auto;
+}
+
+.slider a {
+    z-index: 999;
+    pointer-events: auto;
+}
+
+@keyframes background-animation {
+    0% {
+        background-image: url('../img/slider1.webp');
+    }
+    33% {
+        background-image: url('../img/slider2.webp');
+    }
+    66% {
+        background-image: url('../img/slider3.webp');
+    }
+    100% {
+        background-image: url('../img/slider1.webp'); /* Loop back to the first image */
+    }
+}
+
 .header__content {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 110px;
   // background: rgb(253 201 53);
- background-color: #6ef6ea; /* Specify the path to your image */
+ background-color: #15242d; /* Specify the path to your image */
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
@@ -951,7 +1036,7 @@ input:placeholder{
   border-radius: 50px;
   align-self: baseline;
   margin: 10px 0px 0px 10px;
-  background-color: #064b58; /* Specify the path to your image */
+  background-color: #15242d; /* Specify the path to your image */
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;

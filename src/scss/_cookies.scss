@@ -2,12 +2,14 @@
 .cookiebar {
   z-index: 99999999;
   position: fixed;
-  width: 100%;
+  width: 80%;
   left: 50%;
+  top: 30%;
+  height: 20%;
   bottom: 0;
   padding: 12px 0px 0px 0px;
 
-  background: #07505e;
+  background: #15242d;
   border-radius: 1px;
   text-align: center;
   transform: translateX(-50%);
