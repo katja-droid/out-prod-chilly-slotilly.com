@@ -5,7 +5,7 @@
 //   }
 // }
 .footer{
-   background-color: #15242d !important;
+   background-color: #fff !important;
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
@@ -132,7 +132,7 @@ body.lock {
 }
 .footer__copy {
   padding: 0px 15px 15px;
-  color: #fff;
+  color: #15242d;
   text-align: center;
   // text-transform: capitalize;
   //   background-color: #8c311f;
@@ -727,7 +727,7 @@ h4 {
 
 footer h2,
 footer a {
-  color: #fff !important;
+  color: #105260 !important;
 }
 
 .contactNewBtn {

@@ -9,13 +9,13 @@
   bottom: 0;
   padding: 12px 0px 0px 0px;
 
-  background: #15242d;
+  background: #fff;
+   border: 1px solid #105260;
   border-radius: 1px;
   text-align: center;
   transform: translateX(-50%);
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid 105260;
   border-radius: 50px;
-  box-shadow: 10px 10px 5px grey;
 }
 @media screen and (min-width: 1200px) {
   .cookiebar {
@@ -36,9 +36,8 @@
 .cookiebar p {
   // color: var(--color-modalP);
   padding: 0px 12px 0px;
-  color: var(--color-modalP);
+  color: #105260;
 }
-
 .cookiebar__link {
   font-weight: 500;
   font-size: 0.9em;
@@ -63,10 +62,9 @@
 
 .btn__cookies {
   padding: 6px 16px;
-  color: #fff;
-  background-color: #70f6eb;
+  background-color: #fff;
   border-radius: 50px;
-  color: #07505e;
+  color: #105260;
   &:hover {
       background-color: #70f6eb;
     // border: 0.2px solid #00000070;
@@ -76,7 +74,7 @@
 
 .btn--darker:hover,
 .btn--darker:focus {
-  background-color: #724b02;
+  background-color: #105260;
   color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -89,12 +87,12 @@
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  color: white;
+    color: #105260;
   
 }
 .cookiebar__wrap h2 {
-  color: white;
+  color: #105260;
 }
 .cookiebar__wrap p {
-  color: white;
+  color: #105260;
 }

@@ -66,12 +66,11 @@ $breakpoint-desktop: 1200px;
     height: 100vh;
     background-size: cover;
     background-position: center;
-    animation: background-animation 15s infinite;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+   background-image: url('../img/bg_hero.webp');
 }
 
 .slider h1 {
@@ -83,38 +82,24 @@ $breakpoint-desktop: 1200px;
     z-index: 999;
     pointer-events: auto;
 }
-
-@keyframes background-animation {
-    0% {
-        background-image: url('../img/slider1.webp');
-    }
-    33% {
-        background-image: url('../img/slider2.webp');
-    }
-    66% {
-        background-image: url('../img/slider3.webp');
-    }
-    100% {
-        background-image: url('../img/slider1.webp'); /* Loop back to the first image */
-    }
-}
-
 .header__content {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 110px;
   // background: rgb(253 201 53);
- background-color: #15242d; /* Specify the path to your image */
+ background-color: #fff; /* Specify the path to your image */
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
   // border-bottom: 2px solid #000;
   border: 1px solid #0000001a;
 height: 15vh;
+ border: 1px solid #105260;
   @media screen and (min-width: 1200px) {
     padding-left: 0px;
     // height: 100%;
+
   }
   @media only screen and (max-width: 600px) {
    height: 15vh;
@@ -1005,10 +990,11 @@ input:placeholder{
   color: #084e60;
   padding: 15px 20px;
   border-radius: 50px;
+  border: 1px solid #084e60;
   font-weight: 800;
   font-size: 1.2em;
   text-shadow: 0 0 6px #fff;
-  background: var(--color-button-bg-items);
+  background: #fff;
 }
 
 @keyframes animate_border {
