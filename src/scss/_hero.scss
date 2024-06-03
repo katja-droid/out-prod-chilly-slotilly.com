@@ -62,7 +62,7 @@
 
 .hero__all-items {
   // position: absolute;
-  color: #000;
+  color: #fff;
   // z-index: 1;
   // top: 72%;
   // left: 27%;
@@ -75,9 +75,9 @@
   align-items: center;
   text-transform: capitalize;
   border-radius: 10px;
- border: 1px solid #105260;
- background-color: #fff;
- color: #105260;
+ border: 2px solid #fff;
+ background-color: #CD668E;
+ color: #fff;
 
   border-color: transparent;
   border-radius: var(--radius-button-hero);
@@ -93,8 +93,8 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 1px solid #105260;
-   background-color: #fff;
+ border: 2px solid #fff;
+   background-color: #CD668E;
   // @media screen and (min-width: 1200px) {
   //   left: 44%;
   // }
@@ -102,14 +102,27 @@
 
 .hero__all-items:hover {
    font-weight: 800;
-}
+     animation: bg-animation 3s ease infinite;
+        }
+
+        @keyframes bg-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 .hero__all-items_ {
   // position: absolute;
-  color: #000;
+  color: #fff;
   // z-index: 1;
   // top: 72%;
   // left: 27%;
-  background: #ffde79;
+  background: #fff;
   padding: 30px 30px;
   /* width: 100%; */
   /* align-self: center; */
@@ -118,13 +131,14 @@
   align-items: center;
   text-transform: capitalize;
   border-radius: 10px;
-
+ border: 2px solid #fff;
+ background-color: #CD668E;
+ color: #fff;
 
   border-color: transparent;
   border-radius: var(--radius-button-hero);
   border-style: solid;
   border-width: 0;
-  color: #f2f2f0;
   cursor: pointer;
   /* display: inline-block; */
   font-size: 14px;
@@ -135,33 +149,45 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #084e60;
-  background-color: transparent;
-  border: 1px solid #105260;
+ border: 2px solid #fff;
+   background-color: #CD668E;
   // @media screen and (min-width: 1200px) {
   //   left: 44%;
   // }
 }
 
 .hero__all-items_:hover {
-      background-color: transparent;
-   border: 1px solid #105260;
-  font-weight: 800;
+     font-weight: 800;
+     animation: bg-animation 3s ease infinite;
+        }
+
+        @keyframes bg-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
 }
 
 .marginHero {
   // margin: 20px 0px 20px;
   margin: 20px 0px 20px;
-  color: #000;
+  color: #CD668E;
   text-align: center;
   font-weight: 900;
 }
 
 .wrapperHolder-text {
   padding: 15px;
-  font-size: 35px;
-  color: #fff;
+  font-size: 1em;
+  color: #000;
   text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .hero__button {

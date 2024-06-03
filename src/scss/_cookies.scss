@@ -5,7 +5,7 @@
   width: 80%;
   left: 50%;
   top: 30%;
-  height: 20%;
+  height: 40%;
   bottom: 0;
   padding: 12px 0px 0px 0px;
 
@@ -61,21 +61,50 @@
 }
 
 .btn__cookies {
-  padding: 6px 16px;
-  background-color: #fff;
-  border-radius: 50px;
-  color: #105260;
-  &:hover {
-      background-color: #70f6eb;
-    // border: 0.2px solid #00000070;
-    padding: 6px 16px;
-  }
+ // position: absolute;
+  color: #fff;
+  // z-index: 1;
+  // top: 72%;
+  // left: 27%;
+  background: #fff;
+  padding: 30px 30px;
+  /* width: 100%; */
+  /* align-self: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 10px;
+ border: 2px solid #fff;
+ background-color: #CD668E;
+ color: #fff;
+
+  border-color: transparent;
+  border-radius: var(--radius-button-hero);
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-size: 14px;
+  min-height: 4px;
+  font-weight: bold;
+  padding: 0.9em 4em;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+ border: 2px solid #fff;
+   background-color: #CD668E;
+  // @media screen and (min-width: 1200px) {
+  //   left: 44%;
+  // }
+ 
 }
 
 .btn--darker:hover,
 .btn--darker:focus {
-  background-color: #105260;
-  color: #fff;
+  background-color: #fff;
+  color: #CD668E;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   transition: background-color 0.3s, color 0.3s;
@@ -94,5 +123,9 @@
   color: #105260;
 }
 .cookiebar__wrap p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: #105260;
 }

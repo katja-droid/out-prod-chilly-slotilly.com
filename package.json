@@ -20,6 +20,7 @@
   "homepage": "https://github.com/qwertyokay/gulp-template#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "webpack": "^5.75.0",
     "webpack-stream": "^7.0.0"
   },

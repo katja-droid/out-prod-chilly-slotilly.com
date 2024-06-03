@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
   margin: 0px;
   color: #8b8354;
   letter-spacing: normal;
-   background-color: #fff;
+   background-color: #EDD4C7;
 
   scroll-behavior: smooth;
 }
@@ -88,14 +88,13 @@ $breakpoint-desktop: 1200px;
   align-items: center;
   height: 110px;
   // background: rgb(253 201 53);
- background-color: #fff; /* Specify the path to your image */
+ background-color: #EDC7DF; /* Specify the path to your image */
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
   // border-bottom: 2px solid #000;
   border: 1px solid #0000001a;
 height: 15vh;
- border: 1px solid #105260;
   @media screen and (min-width: 1200px) {
     padding-left: 0px;
     // height: 100%;
@@ -241,8 +240,8 @@ height: 15vh;
 }
 
 .wrapper__items:hover {
-  // border: 1px solid rgba(89, 2, 8, 0.05);
   z-index: 2222;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .wrapper__flex {
@@ -268,9 +267,7 @@ height: 15vh;
   color: #000;
 }
 
-.wrapper__items-desc {
-  line-height: 21px;
-}
+
 
 .wrapper__items-promo {
   position: absolute;
@@ -397,7 +394,7 @@ button {
   width: 100%;
   background-repeat: no-repeat;
   position: relative;
-  background-color: #fff !important;
+  background-color: #EDD4C7 !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -501,7 +498,7 @@ button {
   position: fixed;
   z-index: 99999999;
   width: 100%;
-  background-color: #b0732a !important;
+  background-color: #EDD4C7 !important;
   @media screen and (min-width: 1200px) {
     height: 101px;
   }
@@ -544,7 +541,7 @@ button {
   display: block;
   width: 97%;
   height: 100%;
-  position: relative;
+  margin: 0 auto;
   top: 0%;
   max-height: 390px;
   // padding: 5px;
@@ -553,18 +550,14 @@ button {
   max-height: 300px;
   width: 300px;
   height: 300px;
+  object-fit: cover;
+  background-color: rgb(245, 245, 220);
 }
 
-.h1__hidden {
-  display: none;
-  position: absolute;
-  top: -1%;
-  left: 0%;
-  padding: 0.5em 0;
-  margin: 0;
-  font-size: 1.6em !important;
-  color: #fff !important;
-  background-color: rgba(0, 0, 0, 0.5);
+.h1__nonhidden {
+
+  font-size: 1em !important;
+  color: #000 !important;
   height: 100%;
 
   width: 100%;
@@ -715,18 +708,21 @@ button {
   font-size: revert;
   margin-top: 40px;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.7em;
   font-weight: 600;
-
+ width: 80%;
+ margin: 0 auto;
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-direction: column;
     margin-top: 0px;
     font-size: 1.1em;
   }
-  @media screen and (min-width: 600px) and (max-width: 900px){
-     font-size: 1.1em;
-    margin-top: 10vh;
+  @media screen  and (max-width: 900px){
+     font-size: 0.75em;
+    margin-top: 7vh;
   }
 }
 
@@ -895,7 +891,7 @@ button {
 }
 
 .hero-title__h1 {
-  color: #fff;
+  color: #CD668E;
   background: transparent;
   font-size: 32px;
   font-weight: 600;
@@ -903,6 +899,15 @@ button {
   text-align: center;
   width: 100%;
   // margin-bottom: 20px;
+   text-shadow: 
+                -2px -2px 0 #fff,
+                 2px -2px 0 #fff,
+                -2px  2px 0 #fff,
+                 2px  2px 0 #fff,
+                -2px  0   0 #fff,
+                 2px  0   0 #fff,
+                 0   -2px 0 #fff,
+                 0    2px 0 #fff;
 padding-bottom: 20px;
   @media screen and (min-width: 1200px) {
     font-size: 32px;
@@ -915,6 +920,7 @@ padding-bottom: 20px;
     align-items: center;
     align-self: center;
     text-align: center;
+
   }
 }
 
@@ -984,17 +990,59 @@ input:placeholder{
   color: #034e59 !important;
 }
 .wrapper__buttons-sec2 span {
-  position: relative;
-  z-index: 2;
-  display: block;
-  color: #084e60;
-  padding: 15px 20px;
-  border-radius: 50px;
-  border: 1px solid #084e60;
-  font-weight: 800;
-  font-size: 1.2em;
-  text-shadow: 0 0 6px #fff;
+   // position: absolute;
+  color: #fff;
+  // z-index: 1;
+  // top: 72%;
+  // left: 27%;
   background: #fff;
+  padding: 30px 30px;
+  /* width: 100%; */
+  /* align-self: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 10px;
+ border: 2px solid #fff;
+ background-color: #CD668E;
+ color: #fff;
+
+  border-color: transparent;
+  border-radius: var(--radius-button-hero);
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-size: 14px;
+  min-height: 4px;
+  font-weight: bold;
+  padding: 0.9em 4em;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+ border: 2px solid #fff;
+   background-color: #CD668E;
+  // @media screen and (min-width: 1200px) {
+  //   left: 44%;
+  // }
+}
+.wrapper__buttons-sec2 span:hover{
+   font-weight: 800;
+     animation: bg-animation 3s ease infinite;
+        }
+
+        @keyframes bg-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
 }
 
 @keyframes animate_border {
@@ -1017,15 +1065,17 @@ input:placeholder{
 }
 
 .wrapper__span2 {
-  color: white;
+  color: #CD668E;
   padding: 5px;
   border-radius: 50px;
   align-self: baseline;
   margin: 10px 0px 0px 10px;
-  background-color: #15242d; /* Specify the path to your image */
+   background-color: #fff; /* Specify the path to your image */
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
+    font-weight: 700;
+    border: 1px solid  #CD668E;
 }
 
 .btnsec {
