@@ -88,7 +88,7 @@ $breakpoint-desktop: 1200px;
   align-items: center;
   height: 110px;
   // background: rgb(253 201 53);
- background-color: #EDC7DF; /* Specify the path to your image */
+ background-color: #ce9b80; /* Specify the path to your image */
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
@@ -107,7 +107,50 @@ height: 15vh;
     height: 13vh;
 }
 }
+.privacy-policy-text{
+  color: white;
+  font-weight: 600;
+  font-size: 0.8em;
+   @media only screen and (max-width: 900px) {
+    font-size: 0.7em;
+    padding-top: 10px;
+}
+}
+.delivery-hero{
 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+     padding-top: 40px;
+      @media only screen and (max-width: 900px) {
+ 
+  width: 100%;
+}
+}
+.hero__button-del{
+  background-color: #986549;
+  color: white;
+  padding: 10px;
+  width: 25%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   @media only screen and (max-width: 900px) {
+  font-size: 0.8em;
+  width: 26%;
+}
+}
+.hero__button-del:hover{
+  color: #986549;
+  background-color: #ce9b80 !important;
+
+}
+.slides-container{
+  padding-top: 15vh;
+}
 .header__list {
   display: flex;
   justify-content: center;
@@ -891,23 +934,14 @@ button {
 }
 
 .hero-title__h1 {
-  color: #CD668E;
+  color: #fff;
   background: transparent;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 900;
   line-height: 1;
   text-align: center;
   width: 100%;
   // margin-bottom: 20px;
-   text-shadow: 
-                -2px -2px 0 #fff,
-                 2px -2px 0 #fff,
-                -2px  2px 0 #fff,
-                 2px  2px 0 #fff,
-                -2px  0   0 #fff,
-                 2px  0   0 #fff,
-                 0   -2px 0 #fff,
-                 0    2px 0 #fff;
 padding-bottom: 20px;
   @media screen and (min-width: 1200px) {
     font-size: 32px;
@@ -950,7 +984,9 @@ padding-bottom: 20px;
 }
 
 .wrapper__buttons-sec2 {
-  cursor: pointer;
+  background-color: #986549;
+  color: white;
+   cursor: pointer;
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -963,24 +999,7 @@ padding-bottom: 20px;
 }
 
 .wrapper__buttons-sec2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  // background: linear-gradient(
-  //   115deg,
-  //   #d90769,
-  //   #048abf,
-  //   #f29f05,
-  //   #f24405,
-  //   #0d0d0d
-  // );
-  background-size: 100% 100%;
-  border-radius: 50px;
-  border-radius: inherit;
-  // border: 1px solid #000;
+ 
 }
 
 .wrapper__buttons-sec2:hover::before {
@@ -990,59 +1009,21 @@ input:placeholder{
   color: #034e59 !important;
 }
 .wrapper__buttons-sec2 span {
-   // position: absolute;
-  color: #fff;
-  // z-index: 1;
-  // top: 72%;
-  // left: 27%;
-  background: #fff;
-  padding: 30px 30px;
-  /* width: 100%; */
-  /* align-self: center; */
+  background-color: #986549;
+  color: white;
+  padding: 10px;
+  width: 25%;
+  height: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: capitalize;
-  border-radius: 10px;
- border: 2px solid #fff;
- background-color: #CD668E;
- color: #fff;
-
-  border-color: transparent;
-  border-radius: var(--radius-button-hero);
-  border-style: solid;
-  border-width: 0;
-  cursor: pointer;
-  /* display: inline-block; */
-  font-size: 14px;
-  min-height: 4px;
-  font-weight: bold;
-  padding: 0.9em 4em;
-  text-align: center;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
- border: 2px solid #fff;
-   background-color: #CD668E;
-  // @media screen and (min-width: 1200px) {
-  //   left: 44%;
-  // }
+   @media only screen and (max-width: 900px) {
+  font-size: 0.8em;
+  width: 26%;
+}
 }
 .wrapper__buttons-sec2 span:hover{
-   font-weight: 800;
-     animation: bg-animation 3s ease infinite;
-        }
-
-        @keyframes bg-animation {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+   font-weight: 900;
 }
 
 @keyframes animate_border {
@@ -1065,9 +1046,8 @@ input:placeholder{
 }
 
 .wrapper__span2 {
-  color: #CD668E;
+  color: #986549;
   padding: 5px;
-  border-radius: 50px;
   align-self: baseline;
   margin: 10px 0px 0px 10px;
    background-color: #fff; /* Specify the path to your image */
@@ -1075,7 +1055,6 @@ input:placeholder{
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
     font-weight: 700;
-    border: 1px solid  #CD668E;
 }
 
 .btnsec {

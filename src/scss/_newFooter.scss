@@ -5,7 +5,7 @@
 //   }
 // }
 .footer{
-   background-color: #EDC7DF !important;
+  background-image: url('../img/pattern.png') !important;
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
@@ -43,7 +43,7 @@ input:placeholder{
   row-gap: 10px;
   padding: 10px;
   flex-wrap: wrap-reverse;
-
+ color: #fff;
   @media screen and (min-width: 1200px) {
     margin: 0 auto;
     gap: 20px;
@@ -112,7 +112,7 @@ body.lock {
   position: relative;
   padding-bottom: 5px;
   font-weight: 500;
-  color: #044d5b;
+  color: #fff;
   text-transform: capitalize;
 }
 .footer__link::before {
@@ -727,7 +727,9 @@ h4 {
 
 footer h2,
 footer a {
-  color: #105260 !important;
+  color: #000 !important;
+  font-weight: 700;
+  text-shadow: 4px 4px 6px #fff;
 }
 
 .contactNewBtn {
@@ -751,4 +753,29 @@ footer a {
 
 .modal__input5:focus + .icon__modal-img {
   fill: #561b0d;
+}
+.footer__image{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url(../img/footer_image.webp);
+  background-size: cover;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px;
+  width: 100vw;
+}
+.footer__image h1{
+  font-weight: 900;
+}
+.footer__image p{
+  color: white;
+
+}
+.footer__image p:hover{
+  color: white;
+  cursor: default;
 }
