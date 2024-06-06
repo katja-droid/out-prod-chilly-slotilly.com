@@ -5,7 +5,7 @@ body {
   margin: 0px;
   color: #8b8354;
   letter-spacing: normal;
-   background-color: #EDD4C7;
+   background-color: #d1fffc;
 
   scroll-behavior: smooth;
 }
@@ -33,7 +33,9 @@ $breakpoint-desktop: 1200px;
     }
   }
 
-
+.items__info{
+  color: #503884;
+}
   button {
     position: absolute;
     top: 50%;
@@ -71,6 +73,11 @@ $breakpoint-desktop: 1200px;
     align-content: center;
     flex-direction: column;
    background-image: url('../img/bg_hero.webp');
+    @media only screen and (max-width: 900px) {
+   padding-top: 15px;
+   height: 300vh;
+   }
+
 }
 
 .slider h1 {
@@ -88,7 +95,7 @@ $breakpoint-desktop: 1200px;
   align-items: center;
   height: 110px;
   // background: rgb(253 201 53);
- background-color: #ce9b80; /* Specify the path to your image */
+ background-color: #ffbce9; /* Specify the path to your image */
     background-repeat: repeat; /* This will tile the image across both x and y axes */
     background-position: top left; /* Starts tiling from the top left corner */
     background-size: auto;
@@ -111,6 +118,8 @@ height: 15vh;
   color: white;
   font-weight: 600;
   font-size: 0.8em;
+  width: 80%;
+  margin: 0 auto;
    @media only screen and (max-width: 900px) {
     font-size: 0.7em;
     padding-top: 10px;
@@ -124,28 +133,27 @@ height: 15vh;
   width: 80%;
   margin: 0 auto;
      padding-top: 40px;
-      @media only screen and (max-width: 900px) {
- 
-  width: 100%;
-}
+      
 }
 .hero__button-del{
-  background-color: #986549;
+  background-color: #1e9ec8;
   color: white;
   padding: 10px;
-  width: 25%;
+  width: 20%;
   height: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
    @media only screen and (max-width: 900px) {
+
   font-size: 0.8em;
-  width: 26%;
+  width: 40%;
+
 }
 }
 .hero__button-del:hover{
-  color: #986549;
-  background-color: #ce9b80 !important;
+  color: #1e9ec8;
+  background-color: #ffbce9 !important;
 
 }
 .slides-container{
@@ -253,7 +261,7 @@ height: 15vh;
 }
 
 .wrapper__items {
-  flex: 1 1 308px;
+  flex: 1 1 200px;
   display: list-item;
   text-align: center;
   // margin-bottom: 30px;
@@ -271,7 +279,7 @@ height: 15vh;
 
   @media screen and (min-width: 1200px) {
     padding: 10px 0 0;
-    flex: 1 1 300px;
+    
   }
 
   a {
@@ -295,7 +303,7 @@ height: 15vh;
 }
 
 .wrapper__items-title {
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 120%;
   min-height: 22px;
   font-weight: 500 !important;
@@ -984,7 +992,7 @@ padding-bottom: 20px;
 }
 
 .wrapper__buttons-sec2 {
-  background-color: #986549;
+  background-color: #1e9ec8;
   color: white;
    cursor: pointer;
   position: relative;
@@ -1009,7 +1017,7 @@ input:placeholder{
   color: #034e59 !important;
 }
 .wrapper__buttons-sec2 span {
-  background-color: #986549;
+  background-color: #1e9ec8;
   color: white;
   padding: 10px;
   width: 25%;
@@ -1046,7 +1054,7 @@ input:placeholder{
 }
 
 .wrapper__span2 {
-  color: #986549;
+  color: #1e9ec8;
   padding: 5px;
   align-self: baseline;
   margin: 10px 0px 0px 10px;
